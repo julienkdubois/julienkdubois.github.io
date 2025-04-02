@@ -138,3 +138,49 @@ body {
     filter: invert(1); /* Inverts the colors */
 }
 
+.address-container {
+
+    display: flex;
+    gap: 10px;
+}
+
+/* Style for the location text */
+.location {
+    font-size: 14px; /* Smaller font size */
+    display: flex;
+    align-items: center; /* Align icon and text horizontally */
+    color: #fff; /* White text for the sidebar */
+}
+
+/* Style for the address container */
+.address-container {
+    margin-bottom: 15px; /* Add spacing below the address */
+}
+
+/* Style for the "Visit my office" section */
+.visit-office {
+    position: absolute; /* Position it at the bottom of the page */
+    bottom: 20px; /* Distance from the bottom of the page */
+    left: 50%; /* Center it horizontally within the container */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+    font-size: 18px; /* Font size for the text */
+    color: rgb(16, 38, 59); /* Dark blue color */
+    text-align: center; /* Center the text */
+    background-color: transparent; /* Transparent background */
+    padding: 10px; /* Add some padding for spacing */
+}
+
+/* Style for the arrows */
+.arrow-link {
+    text-decoration: none;
+    font-size: 24px; /* Larger font size for arrows */
+    margin: 0 15px; /* Space between arrows and text */
+    color: rgb(16, 38, 59); /* Dark blue color */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.arrow-link:hover {
+    color: rgb(0, 123, 255); /* Change color on hover */
+}
