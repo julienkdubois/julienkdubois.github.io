@@ -1,88 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Research</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <style>
-        /* Styling for the list item */
         ul {
             list-style-type: none;
             padding-left: 0;
         }
 
         .abstract {
-            display: none; /* Initially hide the abstract */
+            display: none;
             margin-top: 10px;
         }
 
-        /* Styling for the show/hide link */
         .show-abstract {
-            color: #28a745;  /* Changed to green */
+            color: #28a745;
             cursor: pointer;
             text-decoration: underline;
         }
 
-        /* Hover effect for the show/hide link */
         .show-abstract:hover {
             color: #218838;
         }
 
-        /* Styling for the always-visible text */
         .poster-text {
             margin-top: 10px;
+        }
+
+        .container {
+            display: block; /* Important for stacking */
+        }
+
+        .content-box {
+            margin-bottom: 40px;
         }
     </style>
 </head>
 <body>
-    <div class="sidebar">
-        <div class="profile-photo-container">
-            <img src="Photo.jpg" class="profile-photo">
-        </div>
-        <h1>Julien Dubois</h1>
-        <nav class="sidebar-nav">
-            <a href="index.html">Home</a>
-            <a href="teaching.html">Teaching</a>
-            <a href="research.html">Research</a>
-            <a href="https://www.dropbox.com/scl/fi/f5lsjjwcd6lbhrqxmen8o/resume.pdf?rlkey=2mml3xpn6zrk1p3b5vfc6m8l7&st=wdhmovee&dl=0" target="_blank">CV</a>
-        </nav>
+    <div class="main-layout">
+        <div class="sidebar">
+            <div class="profile-photo-container">
+                <img src="Photo.jpg" class="profile-photo" />
+            </div>
+            <h1>Julien Dubois</h1>
+            <nav class="sidebar-nav">
+                <a href="index.html">Home</a>
+                <a href="teaching.html">Teaching</a>
+                <a href="research.html">Research</a>
+                <a href="https://www.dropbox.com/scl/fi/f5lsjjwcd6lbhrqxmen8o/resume.pdf?rlkey=2mml3xpn6zrk1p3b5vfc6m8l7&st=wdhmovee&dl=0" target="_blank">CV</a>
+            </nav>
 
-        <div class="address-container">
-            <p class="location">
-                <img src="map pointer.png" alt="Location" class="social-icon invert"> Crest, ENSAE, office 4071 91120 Palaiseau, France
-            </p>
+            <div class="address-container">
+                <p class="location">
+                    <img src="map pointer.png" alt="Location" class="social-icon invert" />
+                    Crest, ENSAE, office 4071 91120 Palaiseau, France
+                </p>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/julienkdubois" target="_blank">
+                    <img src="github-mark.png" alt="GitHub" class="social-icon invert" />
+                </a>
+                <a href="https://bsky.app/profile/julien-dubois.bsky.social" target="_blank">
+                    <img src="Bluesky.png" alt="Bluesky" class="social-icon" />
+                </a>
+            </div>
         </div>
 
-        <div class="social-links">
-            <a href="https://github.com/julienkdubois" target="_blank">
-                <img src="github-mark.png" alt="GitHub" class="social-icon invert">
-            </a>
-            <a href="https://bsky.app/profile/julien-dubois.bsky.social" target="_blank">
-                <img src="Bluesky.png" alt="Bluesky" class="social-icon">
-            </a>
+        <div class="container">
+            <!-- Section 1 -->
+            <div class="content-box">
+                <h2>Work in Progress</h2>
+                <ul>
+                    <li>
+                        <b>Transitioning Away from Fossil Fuels: Evidence from a Growth Model with Putty-Clay Capital</b>
+                        <div class="poster-text">
+                            Presented at the poster session of Clifirium 2025 at Banque de France.
+                            <a href="https://drive.google.com/file/d/1bz105f5Z3IBoJ18wtYD4DuUUrHDIZ_LK/view?usp=sharing" target="_blank">Poster here</a>.
+                        </div>
+                        <p class="show-abstract" onclick="toggleAbstract()">Show Abstract</p>
+                        <div class="abstract">
+                            <p>
+                                This paper proposes a theory to disentangle input-saving technological progress from technical efficiency gains of capital.
+                                Assuming different vintages of capital, each defined by fixed input requirements, I derive the optimal allocation of a scarce resource – namely energy – over time.
+                                Qualitatively, reduced capital flexibility creates path dependence, slowing down the transition away from fossil fuels.
+                                Quantitatively, a calibrated version of the model suggests that standard frameworks may underestimate both the duration of the transition and the welfare implications along the adjustment path.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Section 2 -->
+            <div class="content-box">
+                <h2>Non-Academic Publications (in French)</h2>
+                <ul>
+                    <li>
+                        <b><a href="https://www.strategie.gouv.fr/publications/plan-france-relance-sest-deploye" target="_blank">
+                            Où le plan France Relance s’est-il déployé ? – France Stratégie, Note d'Analyse n°140
+                        </a></b> – Descriptive analysis of the geographic allocation of France Relance funds.
+                    </li>
+                    <li>
+                        <b><a href="https://www.strategie.gouv.fr/publications/comite-deevaluation-plan-france-relance-rapport-final" target="_blank">
+                            Comité d'évaluation du plan France Relance – Rapport final – France Stratégie
+                        </a></b> – Evaluation of France Relance. I contributed to the chapter on macroeconomic deployment, economic recovery, and production taxes.
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-    <div class="container">
-        <div class="content-box">
-            <h2>Work in Progress</h2>
-            <ul>
-                <li><b>Transitioning Away from Fossil Fuels: Evidence from a Growth Model with Putty-Clay Capital</b></li>
-                <p class="show-abstract" onclick="toggleAbstract()">Show Abstract</p> <!-- Link to toggle visibility -->
-                <div class="abstract">
-                    <p>This paper proposes a theory to disentangle input-saving technological progress from technical efficiency gains of capital. Assuming different vintages of capital, each defined by fixed input requirements, I derive the optimal allocation of a scarce resource – namely energy – over time. Qualitatively, reduced capital flexibility creates path dependence, slowing down the transition away from fossil fuels. Quantitatively, a calibrated version of the model suggests that standard frameworks may underestimate both the duration of the transition and the welfare implications along the adjustment path.</p>
-                </div>
-                <p class="poster-text">Presented at the poster session of Clifirium 2025 at Banque de France. <a href="https://drive.google.com/file/d/1bz105f5Z3IBoJ18wtYD4DuUUrHDIZ_LK/view?usp=sharing" target="_blank">Poster here</a>.</p>
-            </ul>
-        </div>
-    </div>
-
     <script>
-        // JavaScript to toggle the visibility of the abstract
         function toggleAbstract() {
-            var abstract = document.querySelector('.abstract');
-            var showAbstractLink = document.querySelector('.show-abstract');
-            
+            const abstract = document.querySelector('.abstract');
+            const showAbstractLink = document.querySelector('.show-abstract');
+
             if (abstract.style.display === "none" || abstract.style.display === "") {
                 abstract.style.display = "block";
                 showAbstractLink.textContent = "Hide Abstract";
@@ -94,9 +128,9 @@
     </script>
 
     <div class="visit-office">
-        <a href="https://mateomoglia.github.io/" class="arrow-link">&#8592;</a> <!-- Left arrow -->
+        <a href="https://mateomoglia.github.io/" class="arrow-link">&#8592;</a>
         <span>Visit my office</span>
-        <a href="https://sites.google.com/view/aurel-melard/home?authuser=1" class="arrow-link">&#8594;</a> <!-- Right arrow -->
+        <a href="https://sites.google.com/view/aurel-melard/home?authuser=1" class="arrow-link">&#8594;</a>
     </div>
 </body>
 </html>
